@@ -20,12 +20,7 @@ cors_proxy.createServer({
   requireHeader: ['origin', 'x-requested-with'],
   removeHeaders: [
     'cookie',
-    'cookie2',
-    // Strip Heroku-specific headers
-    'x-heroku-queue-wait-time',
-    'x-heroku-queue-depth',
-    'x-heroku-dynos-in-use',
-    'x-request-start',
+    'cookie2'
   ],
   redirectSameOrigin: true,
   httpProxyOptions: {
